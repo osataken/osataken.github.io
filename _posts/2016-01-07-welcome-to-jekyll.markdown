@@ -1,25 +1,25 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Hello World"
 date:   2016-01-07 21:54:02
-categories: jekyll update
+categories: general
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+วันนี้ฤกษ์งามยามดีลองเขียน blog ใหม่แบบแอบ `geek`
 
-Jekyll also offers powerful support for code snippets:
+## ความเป็นมาของ Blog นี้?
+โดยส่วนตัวเป็นผมเป็นคนที่ชอบศึกษาอะไรใหม่ๆ แต่ไม่ชอบจดหรือชอบจำอะไรเท่าไหร่ การสร้าง blog นี้ขึ้นมาก็เพื่อจดบันทึกสิ่งที่เรียนรู้และแบ่งปันให้กับคนที่สนใจ ซึ่งหวังว่าจะเป็นประโยชน์บ้างไม่มากก็น้อยครับ
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+อาชีพหลักของผมเป็น programmer ผมชอบใช้ IDE หรือ text editor ในการเขียนบทความหรือจดบันทึกอะไรต่างๆ มากกว่าไปใช้ rich text editor บนหน้า web browser เช่นบน [wordpress], [blogger] หรือ web ให้บริการ blog อื่นๆ
+ผมเลยเริ่มคิดว่าจะเขียน blog มันจากเจ้าพวก IDE หรือ text editor นี่แหล่ะ แต่ประเด็นปัญหาคือเนื้อหาใน blog เนี่ยมันไม่เป็น plain text นะ ถ้าเขียนด้วย text อย่างเดียวคงดูเจื่อนๆ ชอบกล
+ 
+idea ที่แวบเข้ามาในหัวก่อนเลยคือ ก็เขียนเป็น `markdown` สิ เขียนมันเสร็จแล้วก็ push ขึ้น git repo แล้วทำ script auto publish ขึ้น blog ไปเลย พอคิดได้ก็ไปเริ่มสร้าง repo บน github กะซัด code เขียน script เต็มที่
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+ปรากฏว่าหลังจาก push file เข้าไปบน repo ไฟล์เดียวเท่านั้น ผมก็ดันเหลือบไปเห็น [Github Pages] บนหน้า repo ของผมเข้าให้ อ่านๆ มันไปเรื่อยๆ ปรากฏว่ามันทำสิ่งที่ผมกำลังอยากจะทำไปแล้วก็เลย `สบาย` เลยครับ
+กดเข้าไปที่หน้า [Github Pages] แล้ว scroll ลงไปด้านล่าง ตามรูปด้านล่างๆ กดเข้าไปดูแรงๆ เลยนะครับ
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+![กดแรงๆ](https://s3-ap-southeast-1.amazonaws.com/osataken/helloworld-1.PNG)
+
+[wordpress]:   https://wordpress.com
+[blogger]:   https://www.blogger.com
+[Github Pages]:   https://pages.github.com/
