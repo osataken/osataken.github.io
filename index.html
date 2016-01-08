@@ -1,23 +1,81 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="home">
+<div class="blog__posts mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-color-text--grey-50">
+            <h3><a href="{{ site.baseurl }}">{{ site.title }}</a></h3>
+        </div>
+    </div>
 
-  <h1 class="page-heading">Posts</h1>
+    {% for post in paginator.posts %}
+        {% if forloop.index == 1 %}
+        <div class="mdl-card mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-color-text--grey-50" {%if post.image%}style="background-image: url({{site.image_host}}{{post.image}})" {% endif %}>
+                <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+                <div class="minilogo"></div>
+                <div>
+                    <strong>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</strong>
+                    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                </div>
+            </div>
+        </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+            <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+                <img src="images/kendo.jpg">
+                +1,337
+            </div>
+            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+                <div>
+                    <strong>{{site.author}}</strong>
+                </div>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
+                    <li class="mdl-menu__item" onclick="location.href='{{site.baseurl}}About'">About</li>
+                </ul>
+                <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                    <i class="material-icons" role="presentation">more_vert</i>
+                    <span class="visuallyhidden">show menu</span>
+                </button>
+            </div>
+        </div>
+        {% else %}
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50" {%if post.image%}style="background-image: url({{site.image_host}}{{post.image}})" {% endif %}>
+                <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+                {{post.excerpt}}
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+                <div class="minilogo"></div>
+                <div>
+                    <strong>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</strong>
+                    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                </div>
+            </div>
+        </div>
+        {% endif %}
     {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    <!-- Pagination links -->
+    <div class="mdl-cell mdl-cell--12-col">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+        {% else %}
+        <span class="previous">Previous</span>
+        {% endif %}
+        <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% else %}
+        <span class="next ">Next</span>
+        {% endif %}
+    </div>
 </div>
+

@@ -39,11 +39,11 @@ $on-laptop:        800px;
     }
 }
 
-
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
         "syntax-highlighting"
 ;

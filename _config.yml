@@ -1,12 +1,18 @@
 # Site settings
-title: OsataKen Blog
+title: Ken's Blog
 email: osataken@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Let's craft software!!!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://osataken.github.io" # the base hostname & protocol for your site
 twitter_username: osataken
 github_username:  osataken
 
+image_host: https://s3-ap-southeast-1.amazonaws.com/osataken/
+
 # Build settings
 markdown: kramdown
+
+paginate: 5
+
+author: Kunaruk (Ken)

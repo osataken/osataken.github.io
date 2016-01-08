@@ -4,7 +4,6 @@
 {% include head.html %}
 
 <body>
-
 <div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
@@ -24,13 +23,19 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<div class="blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+<div class="blog blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
     <main class="mdl-layout__content">
-    {% include header.html %}
+        <div class="demo-back">
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/" title="go back" role="button">
+                <i class="material-icons" role="presentation">arrow_back</i>
+            </a>
+        </div>
 
-    {{ content }}
+        {% include header.html %}
 
-    {% include footer.html %}
+        {{ content }}
+
+        {% include footer.html %}
     </main>
     <div class="mdl-layout__obfuscator"></div>
 </div>
