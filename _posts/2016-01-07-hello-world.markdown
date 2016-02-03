@@ -3,7 +3,7 @@ layout: post
 title:  "Hello World"
 date:   2016-01-07 21:54:02
 categories: general
-image: 2016-01-07-hello-world.jpg
+image: helloworld-0.JPG
 ---
 
 วันนี้ฤกษ์งามยามดีลองเขียน blog ใหม่แบบแอบ `geek` หลังจากที่ตั้งเป้าว่าจะเริ่มเขียน blog มาได้พักใหญ่แต่ก็ดื้อดึงไม่ได้เริ่มเป็นชิ้นเป็นอันซักที่
