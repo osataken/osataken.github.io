@@ -108,7 +108,7 @@ body .blog {
 }
 .blog .mdl-card__supporting-text {
   width: 100%;
-  padding: 16px;
+  padding: 0px;
   min-height: 64px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -341,11 +341,16 @@ body .blog {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.blog--blogpost .meta + .mdl-card__supporting-text h2 {
+  padding: 16px;
+}
+
 .blog--blogpost .meta + .mdl-card__supporting-text p {
   max-width: 512px;
   margin: 16px auto;
   font-size: 16px;
   line-height: 28px;
+  padding: 16px;
 }
 
 .blog--blogpost .comments {
