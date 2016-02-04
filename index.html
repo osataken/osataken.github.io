@@ -20,10 +20,11 @@ title: Home
                 {{post.excerpt}}
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-                <div class="minilogo"></div>
-                <div>
-                    <strong>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</strong>
+                <div class="postdate">
                     <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                </div>
+                <div class="readmore">
+                    <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
                 </div>
             </div>
         </div>
@@ -55,10 +56,11 @@ title: Home
                 {{post.excerpt}}
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-                <div class="minilogo"></div>
-                <div>
-                    <strong>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</strong>
+                <div class="postdate">
                     <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                </div>
+                <div class="readmore">
+                    <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
                 </div>
             </div>
         </div>
