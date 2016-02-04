@@ -16,6 +16,9 @@ title: Home
             <div class="mdl-card__media mdl-color-text--grey-50" {%if post.image%}style="background-image: url({{site.image_host}}{{post.image}})" {% endif %}>
                 <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
             </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+                {{post.excerpt}}
+            </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
                 <div class="minilogo"></div>
                 <div>
