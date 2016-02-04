@@ -18,6 +18,8 @@ paginate: 5
 author: Ken
 timezone: Asia/Bangkok
 
+future: true
+
 excerpt_separator: <!--more-->
 
 gems: [jekyll-paginate]
