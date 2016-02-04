@@ -16,3 +16,5 @@ markdown: kramdown
 paginate: 5
 
 author: Ken
+
+excerpt_separator: <!--more-->
