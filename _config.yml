@@ -16,5 +16,8 @@ markdown: kramdown
 paginate: 5
 
 author: Ken
+timezone: Asia/Bangkok
 
 excerpt_separator: <!--more-->
+
+gems: [jekyll-paginate]
