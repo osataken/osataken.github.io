@@ -280,13 +280,22 @@ body .blog {
 .blog .blog__posts > .demo-nav > .demo-nav__button:last-child .mdl-button {
   margin-left: 16px;
 }
+.blog .blog__posts .highlight {
+  background: #F4F4F4;
+  margin: 0px 25px 15px 25px;
+  padding: 0px 10px;
+  overflow-x: auto;
+}
 .blog .mdl-card > a {
   color: inherit;
   text-decoration: none;
   font-weight: inherit;
 }
-.blog .mdl-card h3 {
-  margin: 0;
+.blog .mdl-card h1,
+.blog .mdl-card h2,
+.blog .mdl-card h3,
+.blog .mdl-card h4 {
+  margin: 0px 0px 0px 15px;
 }
 .blog .mdl-card h3 a {
   text-decoration: none;
@@ -556,4 +565,17 @@ body .blog {
           align-items: center;
   background-color: white;
   box-sizing: border-box;
+}
+
+.post-item .mdl-card__supporting-text h4 {
+    margin-top: 10px;
+}
+
+.post-item .mdl-card__supporting-text h4 a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.post-item .mdl-card__supporting-text p {
+    padding-top: 0px;
 }

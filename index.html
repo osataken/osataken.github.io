@@ -12,11 +12,12 @@ title: Home
 
     {% for post in paginator.posts %}
         {% if forloop.index == 1 %}
-        <div class="mdl-card mdl-cell mdl-cell--8-col">
+        <div class="mdl-card mdl-cell mdl-cell--8-col post-item">
             <div class="mdl-card__media mdl-color-text--grey-50" {%if post.image%}style="background-image: url({{site.image_host}}{{post.image}})" {% endif %}>
-                <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                <a href="{{ post.url | prepend: site.baseurl }}"></a>
             </div>
             <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+                <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
                 {{post.excerpt}}
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
@@ -48,11 +49,12 @@ title: Home
             </div>
         </div>
         {% else %}
-        <div class="mdl-card mdl-cell mdl-cell--12-col">
+        <div class="mdl-card mdl-cell mdl-cell--12-col post-item">
             <div class="mdl-card__media mdl-color-text--grey-50" {%if post.image%}style="background-image: url({{site.image_host}}{{post.image}})" {% endif %}>
-                <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                <a href="{{ post.url | prepend: site.baseurl }}"></a>
             </div>
             <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+                <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
                 {{post.excerpt}}
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
