@@ -2,7 +2,7 @@
 layout: post
 title:  "Mgo it Mongo Way!!!"
 date:   2016-02-12 22:22:22
-categories: general
+categories: Go, MongoDB
 image: go_meets_mongo.PNG
 ---
 
