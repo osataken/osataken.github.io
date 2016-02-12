@@ -185,5 +185,7 @@ func main() {
 หากใครสนใจอยากดู source code เพิ่มเติมสามารถเข้าไปดูได้ที่ [go-mgo]
 (code ยังไม่สวยเอาไปปรับก่อนใช้งานกันด้วยนะครับ ^^)
 
+วิธีการเขียนด้านบนผมต่อยอดมาจาก article นึงแต่ผมหาไม่เจอ ใครเจอ code style ใกล้เคียงกันนี้รบกวน comment ด้วยครับจะได้ให้ credit เขา ^^
+
 [mgo]: https://labix.org/mgo
 [go-mgo]: https://github.com/osataken/go-mgo
