@@ -23,6 +23,9 @@
   ga('create', 'UA-76168655-1', 'auto');
   ga('send', 'pageview');
 
+  {% if page.title %}
+  ga('send', 'title', '{{ page.title }}');
+  {% endif %}
 </script>
 
 <div class="blog mdl-layout mdl-js-layout has-drawer is-upgraded">
